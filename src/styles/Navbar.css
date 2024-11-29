@@ -1,0 +1,79 @@
+@keyframes Hover {
+ from {
+    background-color: #171717;
+ }
+ to {
+    background-color: #00509b;
+    color: white;
+ }
+}  
+
+.LogoImg {
+    width: 3vw;
+}
+
+.FirstSectionLink {
+    display: flex;
+    align-items: center;
+}
+.FirstSectionLink:hover {
+    animation-name: Hover;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    border-radius: 5px;
+}
+
+.LogoText {
+    margin: 10px;
+}
+
+.MainNavbar {
+    background-color: #171717;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: grey;
+}
+
+.SenondSection {
+    width: 15%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.FourthSection {
+    width: 15%;
+    text-align: center;
+}
+
+.Button {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+.Button:hover {
+    animation-name: Hover;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    border: 1px solid grey;
+}
+
+.SecondSectionLink {
+    padding: 5px;
+    border-radius: 5px;
+}
+.SecondSectionLink:hover {
+    border-bottom: 2px solid grey;
+    color: white;
+}
+
+.thirdSectionSearch {
+    padding: 5px 20px;
+    border-radius: 5px;
+    color: white;
+    background: none;
+}
