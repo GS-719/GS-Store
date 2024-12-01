@@ -1,10 +1,10 @@
-// import { PrismaClient } from "@prisma/client";
+import { PrismaClient } from "@prisma/client";
 import { NextApiRequest, NextApiResponse } from "next";
-// const prisma = new PrismaClient();
+const prisma = new PrismaClient();
 
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
     if (req.method === "GET") {
-        // const data = await prisma.user.findMany();
+        const Data = await prisma.user.findMany();
         const data = [
             {
                 id: 1,
