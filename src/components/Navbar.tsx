@@ -24,11 +24,13 @@ const Navbar = () => {
           <input className='thirdSectionSearch' placeholder='Search' />
         </div>
         <div className='FourthSection'>
-          <button className='Button'>Sign in</button>
-          <button className='Button'>Sign up</button>
+          <Link href="/page_s/signin">
+            <button className='NavbarButton'>Sign in</button>
+          </Link>
+          <button className='NavbarButton'>Sign up</button>
         </div>
       </header>
-      <hr/>
+      <hr />
     </>
   )
 }
