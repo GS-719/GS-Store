@@ -9,7 +9,7 @@ const Page = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await axios.get("http://localhost:3000/api/getallusers");
+      const response = await axios.get("/api/getallusers");
       const data = await response.data;
       setData(data);
     }
