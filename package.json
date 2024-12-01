@@ -6,6 +6,7 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
+    "vercel-build": "prisma generate && prisma migrate deploy && next build",
     "lint": "next lint"
   },
   "dependencies": {
@@ -14,7 +15,6 @@
     "next": "15.0.3",
     "prisma": "^6.0.0",
     "react": "19.0.0-rc-66855b96-20241106",
-    "vercel-build": "prisma generate && prisma migrate deploy && next build",
     "react-dom": "19.0.0-rc-66855b96-20241106"
   },
   "devDependencies": {
