@@ -1,0 +1,56 @@
+@keyframes Hover {
+    from {
+       background-color: #171717;
+    }
+    to {
+       background-color: #00509b;
+       color: white;
+    }
+   } 
+
+.Main {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.SigninInput {
+    background: none;
+    padding: 5px 10px;
+    margin: 5px 0;
+    color: white;
+    width: 250px;
+    border-radius: 5px;
+}
+
+h1 {
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+    border-radius: 5px;
+    /* padding: 5px; */
+}
+h1:hover {
+    animation-name: Hover;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.SigninButton {
+    width: 250px;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 5px;
+    color: rgb(173, 173, 173);
+}
+.SigninButton:hover {
+    animation-name: Hover;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
