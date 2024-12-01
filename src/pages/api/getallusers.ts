@@ -4,7 +4,19 @@ import prisma from "@/lib/prisma";
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
     if (req.method === "GET") {
         try {
-            const data = await prisma.user.findMany();
+            // const data = await prisma.user.findMany();
+            const data = [
+                {
+                    id: 1,
+                    username: "GS",
+                    email: "gurjotsingh.code@gmail.com"
+                },
+                {
+                    id: 2,
+                    username: "admin",
+                    email: "admin@gmail.com"
+                }
+            ]
             res.status(200).json(data);
         } catch (err) {
             console.error("Database fetching data error: ", err);
