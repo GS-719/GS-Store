@@ -1,0 +1,25 @@
+@keyframes Hover {
+    from {
+        background-color: #171717;
+    }
+
+    to {
+        background-color: #00509b;
+        color: white;
+    }
+}
+
+.SignButton {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+.SignButton:hover {
+    animation-name: Hover;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    border: 1px solid grey;
+}
